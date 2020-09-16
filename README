@@ -1,0 +1,30 @@
+Seelk CASE Study: Backend
+
+////////////    USAGE    \\\\\\\\\\\\\\\\\\\\\
+
+python -m venv env (do this once to create a virtual environnement)
+
+pip install -r requirements.txt (do this once too to install all the usefull packages)
+
+run the server -> python manage.py runserver
+
+to access to the users you must be connected (admin, password123)
+getting the value of the bitcoin at     http://127.0.0.1:8000/bitcoin/
+
+day 1:
+IMPLEMENTED
+- implemented POST / PUT/ GET / DELETE User
+- LOGIN / Logout -> no frontend to login or sign up working using the provided django interface
+- Getting the Bitcoin value in USD serialized to a json file (still haven't find how to serialize an external data into a bitcoinSerializer i keep getting empty fields or errors
+                                                                                                                                                                        {
+                                                                                                                                                                            {},
+                                                                                                                                                                            {}
+                                                                                                                                                                        } like above)
+
+NOT IMPLEMENTED
+- POST / PUT / GET / DELETE Alerts -> thinking about 2 solution about when to update the bitcoin rate 
+        1- each time a client ask the database for the BTC rate it is added to the alerts if it has a certain rate. 
+        2- using the advanced python scheduler to get the information every X minutes
+- sending emails (using SMTP ?)
+
+I spent a lot of time reading documentation this morning and ended up having some issues with my project architecture and I still think it's pretty weak but it works for now ! this afternoon I had issues with how to serialize the results from my request to CoinAPI into a bitcoinSerializer as a Solution I keep the results in a Json format i'll be able to chunk to fill my database afterward. Lots of improvements since this morning even if I would've liked to be cleaner.
