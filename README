@@ -27,4 +27,4 @@ NOT IMPLEMENTED
         2- using the advanced python scheduler to get the information every X minutes
 - sending emails (using SMTP ?)
 
-I spent a lot of time reading documentation this morning and ended up having some issues with my project architecture and I still think it's pretty weak but it works for now ! this afternoon I had issues with how to serialize the results from my request to CoinAPI into a bitcoinSerializer as a Solution I keep the results in a Json format i'll be able to chunk to fill my database afterward. Lots of improvements since this morning even if I would've liked to be cleaner.
+I spent a lot of time reading documentation this morning and ended up having some issues with my project architecture. I still think it's pretty weak but it works for now ! this afternoon I had issues with how to serialize the results from my request to CoinAPI into a bitcoinSerializer. As a Solution I keep the results in a Json format that i'll be able to chunk to fill my database afterward. Lots of improvements since this morning even if I would've liked to be cleaner. the project is cool i had fun struggling today !
